@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.produto {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.imagem-produto {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.informacoes {
+    max-width: 400px;
+}
+
+.informacoes h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.preco-atual {
+    font-size: 24px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.parcelamento {
+    font-size: 14px;
+    color: #555;
+}
+
+.desconto {
+    font-size: 14px;
+    color: #333;
+}
+
+.cupom {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.botao-sacola {
+    background-color: #ff8c42;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-sacola:hover {
+    background-color: #e07a35;
+}
+
+.descricao {
+    margin-top: 20px;
+}
+
+.descricao h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}

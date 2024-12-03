@@ -1,0 +1,614 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 2%;
+    height: 8vh;
+    width: 96%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.cabecalho .logo img {
+    width: 120px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    padding: 0 10px;
+    width: 30%;
+    height: 4vh;
+}
+
+.pesquisa input {
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 1;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+.marcas a{
+    color: #336699;
+}
+.pesquisa img {
+    width: 16px;
+    height: 16px;
+}
+
+.menu {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item img {
+    height: 24px;
+    width: auto;
+    margin-bottom: 4px;
+}
+
+.menu-item p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.baner{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.imgs{
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    66.66% {transform: translateX(-100%);}
+    100% {transform: translateX(0px);}
+}
+
+.carrosel{
+    width: 40%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.carrosel img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #065A6D;
+    padding: 15px 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menua a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.menus a:hover{
+    transform: scale(1.2);
+}
+
+.marcas{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 9%;
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 20px;
+    border: 2px solid #065A6D;
+}
+
+button {
+    position: relative;
+    height: 20%;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FF6C0E;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #FF6C0E;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #FF6C0E;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #FF6C0E;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.marcas button {
+    top: 40%;
+}
+
+.eudora button{
+    color: #3C3C90;
+    border: 2px solid #3C3C90;
+    box-shadow: inset 0 0 0 0 #3C3C90;
+}
+
+.eudora button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #3C3C90;
+}
+
+.boticario button{
+    color: black;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 0 black;
+}
+
+.boticario button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 black;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+footer div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.redesocial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.redesocial img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sob{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 1px;
+}
+
+.sob hr{
+    color: #065A6D;
+    width: 6%
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 10%;
+}
+.conteudo img{
+    width: 50%;
+    height: auto;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+.textos p{
+    margin-top: 10%;
+    text-align: justify;
+    font-size: 15px;
+    padding: 60px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario{
+    margin: 8% 0;
+}
+
+.nomes, .tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nomes input, .tel input {
+    width: 40%;
+    flex: 1;
+}
+
+
+input, textarea, button {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+form {
+    margin: 0 35%;
+    width: 30%;
+}
+
+.contato {
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: 35%;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+.contato h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contato p {
+    text-align: center;
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.formulario button{
+    color: black;
+    background-color: #1ACFB8 ;
+    border: 2px solid #1ACFB8;
+    box-shadow: inset 0 0 0 0 white;
+}
+
+.formulario button:hover {
+    color: #1ACFB8;
+    box-shadow: inset 0 -100px 0 0 white;
+}
+
+.essencias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
+
+.cardperfume{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 0;
+    width: 20%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.cardperfume img{
+    width: 100%;
+}
+
+.destaque{
+    color: #545454;
+}
+
+.riscados{
+    text-decoration: line-through;
+}
+
+.name{
+    line-height: 1;
+}
+
+.desconto{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.destacado{
+    margin: 5px;
+    padding: 10px;
+    background-color: #0093B4;
+    border-radius: 10px;
+}
+
+.carrin{
+    text-align: right;
+}
+
+.carrin img{
+    width: 5%;
+    background-color: #0093B4;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.container {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.produto {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.imagem-produto {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.informacoes {
+    max-width: 400px;
+}
+
+.informacoes h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.preco-atual {
+    font-size: 24px;
+    color: #0093B4;
+    font-weight: bold;
+}
+
+.parcelamento {
+    font-size: 14px;
+    color: #555;
+}
+
+.desconto {
+    font-size: 14px;
+    color: #333;
+}
+
+.cupom {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.botao-sacola {
+    margin-top: 10vh;
+    background-color: #0093B4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-sacola button:hover {
+    background-color: white;
+}
+
+.descricao {
+    margin-top: 20px;
+}
+
+.descricao h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos gerais para telas menores */
+@media screen and (max-width: 768px) {
+    .carrosel{
+        display: flex;
+        animation: slide 15s infinite;
+    }
+
+    .carrosel img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes slide {
+        0% {transform: translateX(0);}
+        50% {transform: translateX(-100%);}
+        100% {transform: translateX(0px);}
+    }
+    .cabecalho {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pesquisa {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .menus{
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        gap: 10px;
+    }
+
+    .menu-item img {
+        height: 15px; /* Aumentando os ícones */
+    }
+
+    .marcas {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .marcas img{
+        margin: 20px 0;
+    }
+
+    .cardperfume {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .essencias {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    form {
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    .contato {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .produto {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagem-produto {
+        max-width: 90%;
+    }
+
+    .informacoes {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .botao-sacola {
+        width: 100%;
+        text-align: center;
+    }
+    .textos{
+        padding: 70px 0;
+    }
+    .conteudo img{
+        width: 50%;
+    }
+    .textos p{
+        margin-top: 10px;
+        font-size: 5px;
+        padding: 20px;
+    }
+    footer {
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .redesocial{
+        justify-content: center;
+    }
+
+    .redesocial img{
+        width: 12px;
+        height: 12px;
+    }
+
+    footer div {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
